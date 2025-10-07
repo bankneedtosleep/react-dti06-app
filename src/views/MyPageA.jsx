@@ -26,11 +26,25 @@ export default function MyPageA() {
         </div>
 
         {/* ส่วนที่ 2: ข้อความ */}
-        <div className='flex justify-center items-center h-[60vh]'>
-          <div className="border-4 border-yellow-400 px-10 py-6 text-center rounded-md">
-            <h1 className='text-4xl text-white mb-4'>
+        <div className='flex justify-center items-center h-[70vh]'>
+          <div className='text-center flex flex-col items-center gap-6'>
+            <div className='text-5xl md:text-3xl text-white tracking-wider' style={{ fontFamily: 'Monomaniac One' }}>
               Somrak Sudyodjing
-            </h1>
+            
+
+            
+              <p className="text-[#01D5A2] text-lg md:text-3xl font-medium">Freelance Web Developer</p>
+              <p className='text-5xl md:text-3xl text-white tracking-wider'>Based In THAILAND</p>
+            </div>
+
+            {/* profile circle with teal ring */}
+            <div className='mt-4'>
+              <div className='rounded-full p-1 bg-gradient-to-br from-transparent to-transparent' style={{ boxShadow: '0 0 0 4px rgba(0,0,0,0.45), 0 8px 30px rgba(0,255,200,0.06)' }}>
+                <div className='rounded-full p-1 bg-black' style={{ boxShadow: '0 0 0 3px rgba(1, 213, 162, 1), inset 0 0 18px rgba(0,255,200,0.06)' }}>
+                  <img src={Profile} alt='Profile' className='w-48 h-48 md:w-56 md:h-56 rounded-full object-cover' />
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
