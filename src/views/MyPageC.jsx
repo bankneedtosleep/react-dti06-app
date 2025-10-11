@@ -1,7 +1,7 @@
 import React from "react";
 import C1 from "../assets/imgC/imageC1.png";
 import C2 from "../assets/imgC/imageC2.png";
-import { FaLinkedin, FaGithub, FaXTwitter } from "react-icons/fa6";
+import { FaLinkedin, FaGithub, FaXTwitter, FaInstagram } from "react-icons/fa6";
 
 export default function MyPageC() {
   return (
@@ -40,7 +40,10 @@ export default function MyPageC() {
               <div className="flex items-center gap-2">
                 <button className="relative bg-[#3b6bf0] text-black px-6 pr-10 py-3 rounded-full text-sm font-semibold overflow-visible">
                   CONTACT ME
-                  <span className="absolute right-3 top-1/2 transform -translate-y-1/2 w-3 h-3 bg-black rounded-full" aria-hidden="true" />
+                  <span
+                    className="absolute right-3 top-1/2 transform -translate-y-1/2 w-3 h-3 bg-black rounded-full"
+                    aria-hidden="true"
+                  />
                 </button>
               </div>
               <div className="flex items-center gap-3 text-gray-300">
@@ -83,18 +86,22 @@ export default function MyPageC() {
                 ในการทำงานมีพื้นฐานการศึกษาด้านวิศวกรรมซอฟต์แวร์
               </p>
               <p className="text-sm text-gray-300 mb-4">
-                และชอบเรื่องการเข้าถึง (accessibility)
-                ชอบให้ความสำคัญกับการเข้าถึง (accessibility)
-                เมื่อต้องพัฒนาเว็บไซต์
-                มีความกระตือรือร้นและอยากเรียนรู้เทคโนโลยีใหม่ ๆ เช่น React.js
-                และการออกแบบ UX/UI
+                ชอบให้ความสำคัญกับการเข้าถึง (accessibility) เมื่อพัฒนาเว็บไซต์ <br />
+                มีความกระตือรือร้นและอยากรู้ อยากเห็นเกี่ยวกับการแก้ปัญหาต่างๆ<br />
+                ปัจจุบันกำลังศึกษาเรียนรู้เกี่ยวกับ React.js และการออกแบบ<br />
+                เว็บไซต์เล็กน้อยเมื่อไม่ได้เขียนโปรแกรม ดิฉัน/ผมชอบเล่นฟุตบอล
+                ถ่ายภาพ และเล่นเกม FIFA, Diablo <br />
+                กำลังเรียนรู้เพิ่มเติมเพื่อพัฒนาทักษะอยู่เสมอ
               </p>
 
               <div className="flex items-center gap-4">
                 <div className="flex items-center gap-2">
                   <button className="relative bg-[#3b6bf0] px-5 pr-10 py-2 rounded-full text-sm overflow-visible">
                     DOWNLOAD RESUME
-                    <span className="absolute right-3 top-1/2 transform -translate-y-1/2 w-3 h-3 bg-black rounded-full" aria-hidden="true" />
+                    <span
+                      className="absolute right-3 top-1/2 transform -translate-y-1/2 w-3 h-3 bg-black rounded-full"
+                      aria-hidden="true"
+                    />
                   </button>
                 </div>
                 <div className="flex items-center gap-3">
@@ -122,55 +129,81 @@ export default function MyPageC() {
         </section>
         <div className="w-full h-[2px] my-12 bg-[#484848]"></div>
 
-        {/* Capabilities */}
+        {/* Capabilities: heading left, content right */}
         <section className="mb-12">
-          <h3 className="text-3xl font-extrabold mb-6">MY CAPABILITIES</h3>
-          <div className="flex flex-wrap gap-3">
-            {[
-              "HTML",
-              "CSS",
-              "JAVASCRIPT",
-              "FLUTTER",
-              "DART",
-              "IoT",
-              "REACT",
-              "DATABASE",
-            ].map((x) => (
-              <div
-                key={x}
-                className="border border-[rgba(255,255,255,0.06)] rounded-full px-4 py-2 text-sm"
-              >
-                {x}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-start">
+            <div>
+              <h3 className="text-3xl md:text-4xl font-extrabold">
+                MY CAPABILITIES
+              </h3>
+            </div>
+            <div className="">
+              <p className="text-sm text-gray-300 mb-4">
+                ผมมองหาโอกาสในการเพิ่มทักษะใหม่ๆ อยู่เสมอ ด้านการพัฒนาเว็บและ
+                UX/UI
+              </p>
+              <div className="flex flex-wrap gap-3">
+                {[
+                  "HTML",
+                  "CSS",
+                  "JAVASCRIPT",
+                  "FLUTTER",
+                  "DART",
+                  "IoT",
+                  "REACT",
+                  "DATABASE",
+                ].map((x) => (
+                  <div
+                    key={x}
+                    className="border border-[rgba(255,255,255,0.06)] rounded-full px-4 py-2 text-sm"
+                  >
+                    {x}
+                  </div>
+                ))}
               </div>
-            ))}
+            </div>
           </div>
         </section>
-                  <div className="w-full h-[2px] my-12 bg-[#484848]"></div>
-        {/* Experience */}
+        <div className="w-full h-[2px] my-12 bg-[#484848]"></div>
+        {/* Experience*/}
         <section className="mb-16">
-          <h3 className="text-3xl font-extrabold mb-6">MY EXPERIENCE</h3>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 text-gray-300">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-start">
             <div>
-              <h4 className="font-semibold">
-                Freelance Developer{" "}
-                <span className="text-sm text-gray-400">
-                  Nov 2023 – Present
-                </span>
-              </h4>
-              <p className="text-sm">
-                พัฒนาและปรับปรุงเว็บไซต์สำหรับเว็บแอปพลิเคชันโดยใช้ React.js
-              </p>
+              <h3 className="text-3xl md:text-4xl font-extrabold">
+                MY EXPERIENCE
+              </h3>
             </div>
-            <div>
-              <h4 className="font-semibold">
-                Front-End Intern{" "}
-                <span className="text-sm text-gray-400">
-                  Sep 2023 – Nov 2023
-                </span>
-              </h4>
-              <p className="text-sm">
-                พัฒนา UI/UX และเพิ่มประสิทธิภาพการเข้าถึงตามมาตรฐาน WCAG
-              </p>
+            <div className="text-gray-300">
+              <div className="mb-6">
+                <div className="flex items-start justify-between">
+                  <div>
+                    <h4 className="text-2xl font-semibold">
+                      Freelance Developer
+                    </h4>
+                    <p className="text-sm">
+                      พัฒนาและปรับปรุงเว็บไซต์สำหรับเว็บแอปพลิเคชันโดยใช้
+                      React.js
+                    </p>
+                  </div>
+                  <div className="text-sm text-gray-400">
+                    Nov 2023 – Present
+                  </div>
+                </div>
+              </div>
+
+              <div>
+                <div className="flex items-start justify-between">
+                  <div>
+                    <h4 className="text-2xl font-semibold">Front-End Intern</h4>
+                    <p className="text-sm">
+                      พัฒนา UI/UX และเพิ่มประสิทธิภาพการเข้าถึงตามมาตรฐาน WCAG
+                    </p>
+                  </div>
+                  <div className="text-sm text-gray-400">
+                    Sep 2023 – Nov 2023
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </section>
@@ -178,44 +211,95 @@ export default function MyPageC() {
 
         {/* Contact */}
         <section id="contact" className="mb-10">
-          <h3 className="text-3xl font-extrabold mb-6">LET'S CONNECT</h3>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <h3 className="text-4xl md:text-5xl lg:text-6xl font-extrabold mb-6">
+            LET'S CONNECT
+          </h3>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-start">
             <div>
-              <p>Say hello at chanintornc@sau.ac.th</p>
-              <div className="flex items-center gap-3 mt-4 text-gray-300">
-                <FaLinkedin />
-                <FaGithub />
-                <FaXTwitter />
+              <p className="text-gray-300 mb-2">
+                Say hello at{" "}
+                <span className="font-medium">bank03124@gmail.com</span>
+              </p>
+              <p className="text-gray-300 mb-4">
+                For more info, here's my resume
+              </p>
+
+              <div className="flex items-center gap-3 mt-4">
+                <div className="w-9 h-9 rounded-full bg-[#0f1a44] flex items-center justify-center text-gray-300">
+                  <FaLinkedin />
+                </div>
+                <div className="w-9 h-9 rounded-full bg-[#0f1a44] flex items-center justify-center text-gray-300">
+                  <FaGithub />
+                </div>
+                <div className="w-9 h-9 rounded-full bg-[#0f1a44] flex items-center justify-center text-gray-300">
+                  <FaXTwitter />
+                </div>
+                <div className="w-9 h-9 rounded-full bg-[#0f1a44] flex items-center justify-center text-gray-300">
+                  <FaInstagram />
+                </div>
               </div>
             </div>
 
-            <form className="space-y-4">
-              <input
-                className="w-full bg-[#0b1a55] px-3 py-2 rounded"
-                placeholder="Name"
-              />
-              <input
-                className="w-full bg-[#0b1a55] px-3 py-2 rounded"
-                placeholder="Email"
-              />
-              <input
-                className="w-full bg-[#0b1a55] px-3 py-2 rounded"
-                placeholder="Subject"
-              />
-              <textarea
-                className="w-full bg-[#0b1a55] px-3 py-2 rounded h-32"
-                placeholder="Message"
-              />
-              <button className="bg-[#7aa3ff] px-6 py-2 rounded-full">
-                SUBMIT
-              </button>
-            </form>
+            <div className="flex justify-end">
+              <form className="w-full max-w-md space-y-4">
+                <div>
+                  <label className="block text-sm text-gray-400 mb-2">
+                    Name
+                  </label>
+                  <input
+                    className="w-full bg-[#0b133a] px-4 py-3 rounded placeholder:text-gray-600"
+                    placeholder="Name"
+                  />
+                </div>
+
+                <div>
+                  <label className="block text-sm text-gray-400 mb-2">
+                    Email
+                  </label>
+                  <input
+                    className="w-full bg-[#0b133a] px-4 py-3 rounded placeholder:text-gray-600"
+                    placeholder="Email"
+                  />
+                </div>
+
+                <div>
+                  <label className="block text-sm text-gray-400 mb-2">
+                    Subject
+                  </label>
+                  <input
+                    className="w-full bg-[#0b133a] px-4 py-3 rounded placeholder:text-gray-600"
+                    placeholder="Subject"
+                  />
+                </div>
+
+                <div>
+                  <label className="block text-sm text-gray-400 mb-2">
+                    Message
+                  </label>
+                  <textarea
+                    className="w-full bg-[#0b133a] px-4 py-3 rounded h-36 placeholder:text-gray-600"
+                    placeholder="Message"
+                  />
+                </div>
+
+                <div className="flex">
+                  <button
+                    type="button"
+                    className="bg-[#7aa3ff] px-6 py-2 rounded-full text-black"
+                  >
+                    SUBMIT
+                  </button>
+                </div>
+              </form>
+            </div>
           </div>
         </section>
+        <div className="w-full h-[2px] my-12 bg-[#484848]"></div>
 
         <footer className="text-center text-sm text-gray-400 py-6">
           © 2025 Created by SAU-Dev-Team
         </footer>
+        <div className="w-full h-[2px] my-12 bg-[#484848]"></div>
       </div>
     </div>
   );

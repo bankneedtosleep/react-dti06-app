@@ -36,10 +36,7 @@ export default function MyPageB() {
           {/* left: text block */}
           <div className='order-2 md:order-1'>
             {/* START: Added MY CAPABILITIES / MY EXPERIENCE here */}
-            <div className='text-right mb-10 mr-2'>
-              <a href='#' className='block text-lg font-bold text-gray-300 hover:text-green-500 transition-colors duration-200 mb-2'>MY CAPABILITIES</a>
-              <a href='#' className='block text-lg font-bold text-gray-300 hover:text-green-500 transition-colors duration-200'>MY EXPERIENCE</a>
-            </div>
+            
             {/* END: Added MY CAPABILITIES / MY EXPERIENCE here */}
 
             <h2 className='text-5xl md:text-6xl font-extrabold mb-6' style={{ fontFamily: 'Monomaniac One, system-ui', letterSpacing: '-0.5px' }}>Sombat Jaideemak</h2>
